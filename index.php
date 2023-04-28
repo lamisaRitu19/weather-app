@@ -1,4 +1,5 @@
 <?php
+    include 'keys.php';
 
     $city = 'Dhaka';
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -11,11 +12,11 @@
         $city = ucfirst($city);
     }
    
-    $current_url = 'https://api.openweathermap.org/data/2.5/weather?q='.$city.'&appid=1263aad1b7a60e9ff33ae7b49fa42568';
+    $current_url = 'https://api.openweathermap.org/data/2.5/weather?q='.$city.'&appid='.$api_key;
     $cur_json_data = file_get_contents($current_url);
     $cur_weather_data = json_decode($cur_json_data);
    
-    $url = 'https://api.openweathermap.org/data/2.5/forecast?q='.$city.'&appid=1263aad1b7a60e9ff33ae7b49fa42568';
+    $url = 'https://api.openweathermap.org/data/2.5/forecast?q='.$city.'&appid='.$api_key;
     $json_data  = file_get_contents($url);
     $response_data = json_decode($json_data);
 
