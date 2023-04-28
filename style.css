@@ -1,0 +1,31 @@
+.bg-gray-light {
+    background-color: rgb(193, 193, 193);
+}
+
+.bg-image {
+    background-image: url("./assets/landscape-morning-fog-mountains-with-hot-air-balloons-sunrise_335224-794.avif");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.scroll {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.border-radius {
+    border-radius: 20px;
+}
+
+.opacity-lg {
+    background-color: rgba(245, 245, 245, 0.575);
+}
+
+.opacity-sm {
+    background-color: rgba(245, 245, 245, 0.421);
+}
